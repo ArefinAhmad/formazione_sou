@@ -5,7 +5,7 @@ apt-get update -y
 apt-get upgrade -y
 
 # Installa Apache
-apt-get install apache2 apache2-bin -y
+apt-get install apache2 -y
 
 # Abilita Apache al boot
 systemctl enable apache2
@@ -43,22 +43,3 @@ systemctl start docker
 
 # Aggiunge l'utente vagrant al gruppo docker (per usare docker senza sudo)
 usermod -aG docker vagrant
-
-# Abilita mod_cgi se non già fatto
-a2enmod cgi
-systemctl restart apache2
-
-# Crea uno script CGI che mostra i container Docker
-cat << 'EOF' > /usr/lib/cgi-bin/docker-info.cgi
-#!/bin/bash
-echo "Content-type: text/html"
-echo ""
-echo "<html><head><title>Stato Docker</title></head><body>"
-echo "<h1>🧱 Contenitori Docker attivi</h1>"
-echo "<pre>"
-docker ps
-echo "</pre>"
-echo "</body></html>"
-EOF
-
-chmod +x /usr/lib/cgi-bin/docker-info.cgi
