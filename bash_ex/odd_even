@@ -1,0 +1,27 @@
+#!/bin/bash 
+
+#"Scrivere uno script che accetti un argomento numerico e stampi la sequenze di 
+#numeri da 1 a quel numero con l'indicazione se è pari o dispari.
+#Controllare il corretto numero di argomenti passati allo script 
+#e che l'argomento sia di tipo numerico, in caso contrario generare una condizione di errore."
+
+
+maxnum=$1
+
+if [ $# -ne 1 ]; then #controllo se c'è esattamente 1 argomento passato allo script
+    echo "Errore: Devi passare un solo argomento numerico."
+    exit 1
+fi
+
+if [[ ! "$maxnum" =~ ^[0-9]+$ ]]; then #controllo se l'argomento passato è un numero intero positivo 
+    echo "Errore: L'argomento deve essere un numero intero."
+    exit 1
+fi
+
+for (( i=1; i<=$maxnum; i++ )); do #parto da 1 fino al numero passato come argomento(maxnum)
+    if (( i % 2 == 0 )); then #controllo se il numero è pari
+        echo "$i è pari" #se è pari allora stampa il messaggio
+    else
+        echo "$i è dispari"   #altrimenti stampa il messaggio che è dispari 
+    fi 
+done
