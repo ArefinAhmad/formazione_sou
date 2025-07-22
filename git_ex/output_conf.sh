@@ -26,5 +26,11 @@ Already up to date.
 arefinahmad@MBP-di-Arefin git_ex % git merge branch2
 Auto-merging git_ex/testo.txt
 CONFLICT (content): Merge conflict in git_ex/testo.txt
-Automatic merge failed; fix conflicts and then commit the result.
+Automatic merge failed; fix conflicts and then commit the result. #il conflitto generato 
 arefinahmad@MBP-di-Arefin git_ex % 
+
+#risoluzione
+
+
+#Il conflitto nasce dal contenuto della medesima riga , e la soluzione più semplice consiste nello scegliere una delle due righe 
+#salvare e committare così da confermare le modifiche 
