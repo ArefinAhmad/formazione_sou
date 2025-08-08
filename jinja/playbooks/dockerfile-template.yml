@@ -1,0 +1,11 @@
+---
+- name: Genera Dockerfile da template
+  hosts: localhost
+  vars_files:
+    - ../vars/vars.yml
+  tasks:
+    - name: Genera Dockerfile da template Jinja
+      template:
+        src: ../templates/Dockerfile.j2
+        dest: ./Dockerfile
+

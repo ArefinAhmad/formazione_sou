@@ -1,0 +1,4 @@
+# Impostazioni file aperti per {{ user_name }}
+{{ user_name }} hard nofile {{ 10000 if env_type == 'produzione' else 1000 }}
+{{ user_name }} soft nofile {{ 10000 if env_type == 'produzione' else 1000 }}
+

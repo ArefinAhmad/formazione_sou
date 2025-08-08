@@ -1,0 +1,20 @@
+- name: Aggiunge utenti alla whitelist in access.conf
+  hosts: all
+  become: true
+  vars_files:
+    - ../vars.yml
+
+  tasks:
+    - name: Crea blocco whitelist dinamico per access.conf
+      template:
+        src: ../templates/access_block.j2
+        dest: /tmp/access_block.txt
+      delegate_to: localhost
+
+    - name: "Inserisce blocco prima di '- : ALL : ALL' in access.conf"
+      blockinfile:
+        path: /etc/security/access.conf
+        block: "{{ lookup('file', '/tmp/access_block.txt') }}"
+        insertbefore: '^- : ALL : ALL'
+        create: true
+

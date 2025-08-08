@@ -1,0 +1,6 @@
+env_type: collaudo         # produzione / collaudo / sviluppo
+user_name: jenkins
+whitelist_users:
+  - jenkins
+  - devuser
+  - deploy

@@ -1,0 +1,11 @@
+FROM {{ base_image }}
+
+{% if install_curl %}
+RUN apt-get update && apt-get install -y curl
+{% endif %}
+
+COPY . /app
+WORKDIR /app
+
+CMD ["{{ command }}"]
+

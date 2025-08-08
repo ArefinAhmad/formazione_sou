@@ -1,0 +1,20 @@
+- name: Configura limits.conf per l'utente
+  hosts: localhost
+  become: false
+  vars_files:
+    - ../vars.yml
+
+  tasks:
+    - name: Crea blocco dinamico per limits.conf
+      template:
+        src: ../templates/limits_block.j2
+        dest: /tmp/limits_block.txt
+      delegate_to: localhost
+
+    - name: Aggiunge blocco in fondo a /etc/security/limits.conf
+      blockinfile:
+        path: /etc/security/limits.conf
+        block: "{{ lookup('file', '/tmp/limits_block.txt') }}"
+        insertafter: EOF
+        create: true
+
