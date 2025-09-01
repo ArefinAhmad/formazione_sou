@@ -1,0 +1,211 @@
+ * Serving Flask app 'app'
+ * Debug mode: off
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.2.15:5000
+[33mPress CTRL+C to quit[0m
+127.0.0.1 - - [27/Aug/2025 15:51:20] "GET / HTTP/1.1" 200 -
+Transient error StatusCode.UNAVAILABLE encountered while exporting traces to otel-collector:4317, retrying in 1.04s.
+Transient error StatusCode.UNAVAILABLE encountered while exporting traces to otel-collector:4317, retrying in 2.07s.
+Transient error StatusCode.UNAVAILABLE encountered while exporting traces to otel-collector:4317, retrying in 4.48s.
+Failed to export traces to otel-collector:4317, error code: StatusCode.UNAVAILABLE
+10.0.2.2 - - [27/Aug/2025 15:51:53] "GET / HTTP/1.1" 200 -
+10.0.2.2 - - [27/Aug/2025 15:51:54] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+Transient error StatusCode.UNAVAILABLE encountered while exporting traces to otel-collector:4317, retrying in 0.98s.
+Transient error StatusCode.UNAVAILABLE encountered while exporting traces to otel-collector:4317, retrying in 1.77s.
+Transient error StatusCode.UNAVAILABLE encountered while exporting traces to otel-collector:4317, retrying in 4.80s.
+Failed to export traces to otel-collector:4317, error code: StatusCode.UNAVAILABLE
+10.0.2.2 - - [28/Aug/2025 07:07:54] "GET / HTTP/1.1" 200 -
+Transient error StatusCode.UNAVAILABLE encountered while exporting traces to otel-collector:4317, retrying in 0.83s.
+Transient error StatusCode.UNAVAILABLE encountered while exporting traces to otel-collector:4317, retrying in 2.35s.
+Transient error StatusCode.UNAVAILABLE encountered while exporting traces to otel-collector:4317, retrying in 4.67s.
+Failed to export traces to otel-collector:4317, error code: StatusCode.UNAVAILABLE
+127.0.0.1 - - [28/Aug/2025 07:23:26] "GET / HTTP/1.1" 200 -
+Transient error StatusCode.UNAVAILABLE encountered while exporting traces to otel-collector:4317, retrying in 1.14s.
+Transient error StatusCode.UNAVAILABLE encountered while exporting traces to otel-collector:4317, retrying in 1.97s.
+Transient error StatusCode.UNAVAILABLE encountered while exporting traces to otel-collector:4317, retrying in 3.76s.
+Failed to export traces to otel-collector:4317, error code: StatusCode.UNAVAILABLE
+10.0.2.2 - - [28/Aug/2025 07:53:45] "GET / HTTP/1.1" 200 -
+Transient error StatusCode.UNAVAILABLE encountered while exporting traces to otel-collector:4317, retrying in 1.18s.
+Transient error StatusCode.UNAVAILABLE encountered while exporting traces to otel-collector:4317, retrying in 2.36s.
+Transient error StatusCode.UNAVAILABLE encountered while exporting traces to otel-collector:4317, retrying in 4.46s.
+Failed to export traces to otel-collector:4317, error code: StatusCode.UNAVAILABLE
+10.0.2.2 - - [28/Aug/2025 08:50:24] "GET / HTTP/1.1" 200 -
+Transient error StatusCode.UNAVAILABLE encountered while exporting traces to otel-collector:4317, retrying in 0.98s.
+Transient error StatusCode.UNAVAILABLE encountered while exporting traces to otel-collector:4317, retrying in 1.81s.
+Transient error StatusCode.UNAVAILABLE encountered while exporting traces to otel-collector:4317, retrying in 3.91s.
+Failed to export traces to otel-collector:4317, error code: StatusCode.UNAVAILABLE
+10.0.2.2 - - [28/Aug/2025 09:06:24] "GET / HTTP/1.1" 200 -
+Transient error StatusCode.UNAVAILABLE encountered while exporting traces to otel-collector:4317, retrying in 1.04s.
+Transient error StatusCode.UNAVAILABLE encountered while exporting traces to otel-collector:4317, retrying in 1.80s.
+Transient error StatusCode.UNAVAILABLE encountered while exporting traces to otel-collector:4317, retrying in 4.62s.
+Failed to export traces to otel-collector:4317, error code: StatusCode.UNAVAILABLE
+10.0.2.2 - - [28/Aug/2025 09:06:54] "GET / HTTP/1.1" 200 -
+Transient error StatusCode.UNAVAILABLE encountered while exporting traces to otel-collector:4317, retrying in 0.83s.
+10.0.2.2 - - [28/Aug/2025 09:06:54] "GET / HTTP/1.1" 200 -
+Transient error StatusCode.UNAVAILABLE encountered while exporting traces to otel-collector:4317, retrying in 1.97s.
+10.0.2.2 - - [28/Aug/2025 09:06:56] "GET / HTTP/1.1" 200 -
+Transient error StatusCode.UNAVAILABLE encountered while exporting traces to otel-collector:4317, retrying in 3.96s.
+Failed to export traces to otel-collector:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting traces to otel-collector:4317, retrying in 0.85s.
+Transient error StatusCode.UNAVAILABLE encountered while exporting traces to otel-collector:4317, retrying in 2.03s.
+Transient error StatusCode.UNAVAILABLE encountered while exporting traces to otel-collector:4317, retrying in 4.40s.
+Failed to export traces to otel-collector:4317, error code: StatusCode.UNAVAILABLE
+10.0.2.2 - - [28/Aug/2025 09:33:22] "GET / HTTP/1.1" 200 -
+10.0.2.2 - - [28/Aug/2025 09:33:23] "GET / HTTP/1.1" 200 -
+10.0.2.2 - - [28/Aug/2025 09:33:24] "GET / HTTP/1.1" 200 -
+10.0.2.2 - - [28/Aug/2025 09:33:24] "GET / HTTP/1.1" 200 -
+10.0.2.2 - - [28/Aug/2025 09:33:24] "GET / HTTP/1.1" 200 -
+Transient error StatusCode.UNAVAILABLE encountered while exporting traces to otel-collector:4317, retrying in 0.92s.
+Transient error StatusCode.UNAVAILABLE encountered while exporting traces to otel-collector:4317, retrying in 1.65s.
+Transient error StatusCode.UNAVAILABLE encountered while exporting traces to otel-collector:4317, retrying in 4.53s.
+10.0.2.2 - - [28/Aug/2025 09:33:29] "GET / HTTP/1.1" 200 -
+Failed to export traces to otel-collector:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting traces to otel-collector:4317, retrying in 1.10s.
+Transient error StatusCode.UNAVAILABLE encountered while exporting traces to otel-collector:4317, retrying in 2.30s.
+Transient error StatusCode.UNAVAILABLE encountered while exporting traces to otel-collector:4317, retrying in 3.37s.
+Failed to export traces to otel-collector:4317, error code: StatusCode.UNAVAILABLE
+10.0.2.2 - - [28/Aug/2025 09:43:48] "GET / HTTP/1.1" 200 -
+Transient error StatusCode.UNAVAILABLE encountered while exporting traces to otel-collector:4317, retrying in 0.94s.
+Transient error StatusCode.UNAVAILABLE encountered while exporting traces to otel-collector:4317, retrying in 1.77s.
+Transient error StatusCode.UNAVAILABLE encountered while exporting traces to otel-collector:4317, retrying in 4.29s.
+Failed to export traces to otel-collector:4317, error code: StatusCode.UNAVAILABLE
+10.0.2.2 - - [28/Aug/2025 10:40:03] "GET / HTTP/1.1" 200 -
+Transient error StatusCode.UNAVAILABLE encountered while exporting traces to otel-collector:4317, retrying in 0.84s.
+Transient error StatusCode.UNAVAILABLE encountered while exporting traces to otel-collector:4317, retrying in 1.61s.
+Transient error StatusCode.UNAVAILABLE encountered while exporting traces to otel-collector:4317, retrying in 3.67s.
+Failed to export traces to otel-collector:4317, error code: StatusCode.UNAVAILABLE
+127.0.0.1 - - [28/Aug/2025 10:44:18] "GET / HTTP/1.1" 200 -
+Transient error StatusCode.UNAVAILABLE encountered while exporting traces to otel-collector:4317, retrying in 0.84s.
+Transient error StatusCode.UNAVAILABLE encountered while exporting traces to otel-collector:4317, retrying in 1.74s.
+Transient error StatusCode.UNAVAILABLE encountered while exporting traces to otel-collector:4317, retrying in 4.64s.
+Failed to export traces to otel-collector:4317, error code: StatusCode.UNAVAILABLE
+127.0.0.1 - - [28/Aug/2025 10:44:46] "GET / HTTP/1.1" 200 -
+Transient error StatusCode.UNAVAILABLE encountered while exporting traces to otel-collector:4317, retrying in 0.97s.
+Transient error StatusCode.UNAVAILABLE encountered while exporting traces to otel-collector:4317, retrying in 1.83s.
+Transient error StatusCode.UNAVAILABLE encountered while exporting traces to otel-collector:4317, retrying in 4.43s.
+Failed to export traces to otel-collector:4317, error code: StatusCode.UNAVAILABLE
+10.0.2.2 - - [28/Aug/2025 10:45:02] "GET / HTTP/1.1" 200 -
+10.0.2.2 - - [28/Aug/2025 10:45:03] "GET / HTTP/1.1" 200 -
+Transient error StatusCode.UNAVAILABLE encountered while exporting traces to otel-collector:4317, retrying in 1.13s.
+Transient error StatusCode.UNAVAILABLE encountered while exporting traces to otel-collector:4317, retrying in 2.03s.
+Transient error StatusCode.UNAVAILABLE encountered while exporting traces to otel-collector:4317, retrying in 4.09s.
+Failed to export traces to otel-collector:4317, error code: StatusCode.UNAVAILABLE
+127.0.0.1 - - [28/Aug/2025 12:25:12] "GET / HTTP/1.1" 200 -
+Transient error StatusCode.UNAVAILABLE encountered while exporting traces to otel-collector:4317, retrying in 0.92s.
+127.0.0.1 - - [28/Aug/2025 12:25:14] "GET / HTTP/1.1" 200 -
+Transient error StatusCode.UNAVAILABLE encountered while exporting traces to otel-collector:4317, retrying in 2.19s.
+Transient error StatusCode.UNAVAILABLE encountered while exporting traces to otel-collector:4317, retrying in 4.57s.
+Failed to export traces to otel-collector:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting traces to otel-collector:4317, retrying in 1.12s.
+Transient error StatusCode.UNAVAILABLE encountered while exporting traces to otel-collector:4317, retrying in 2.11s.
+Transient error StatusCode.UNAVAILABLE encountered while exporting traces to otel-collector:4317, retrying in 4.12s.
+Failed to export traces to otel-collector:4317, error code: StatusCode.UNAVAILABLE
+10.0.2.2 - - [28/Aug/2025 12:25:40] "GET / HTTP/1.1" 200 -
+Transient error StatusCode.UNAVAILABLE encountered while exporting traces to otel-collector:4317, retrying in 0.80s.
+Transient error StatusCode.UNAVAILABLE encountered while exporting traces to otel-collector:4317, retrying in 2.00s.
+Transient error StatusCode.UNAVAILABLE encountered while exporting traces to otel-collector:4317, retrying in 4.38s.
+Failed to export traces to otel-collector:4317, error code: StatusCode.UNAVAILABLE
+127.0.0.1 - - [28/Aug/2025 12:31:28] "GET / HTTP/1.1" 200 -
+Transient error StatusCode.UNAVAILABLE encountered while exporting traces to otel-collector:4317, retrying in 1.18s.
+Transient error StatusCode.UNAVAILABLE encountered while exporting traces to otel-collector:4317, retrying in 1.92s.
+Transient error StatusCode.UNAVAILABLE encountered while exporting traces to otel-collector:4317, retrying in 4.68s.
+Failed to export traces to otel-collector:4317, error code: StatusCode.UNAVAILABLE
+127.0.0.1 - - [28/Aug/2025 12:31:45] "[33mGET /metrics HTTP/1.1[0m" 404 -
+Transient error StatusCode.UNAVAILABLE encountered while exporting traces to otel-collector:4317, retrying in 0.96s.
+Transient error StatusCode.UNAVAILABLE encountered while exporting traces to otel-collector:4317, retrying in 2.34s.
+Transient error StatusCode.UNAVAILABLE encountered while exporting traces to otel-collector:4317, retrying in 3.83s.
+Failed to export traces to otel-collector:4317, error code: StatusCode.UNAVAILABLE
+10.0.2.2 - - [28/Aug/2025 12:32:06] "GET / HTTP/1.1" 200 -
+Transient error StatusCode.UNAVAILABLE encountered while exporting traces to otel-collector:4317, retrying in 1.19s.
+10.0.2.2 - - [28/Aug/2025 12:32:08] "GET / HTTP/1.1" 200 -
+Transient error StatusCode.UNAVAILABLE encountered while exporting traces to otel-collector:4317, retrying in 1.93s.
+Transient error StatusCode.UNAVAILABLE encountered while exporting traces to otel-collector:4317, retrying in 3.21s.
+Failed to export traces to otel-collector:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting traces to otel-collector:4317, retrying in 0.96s.
+Transient error StatusCode.UNAVAILABLE encountered while exporting traces to otel-collector:4317, retrying in 1.81s.
+Transient error StatusCode.UNAVAILABLE encountered while exporting traces to otel-collector:4317, retrying in 4.01s.
+Failed to export traces to otel-collector:4317, error code: StatusCode.UNAVAILABLE
+10.0.2.2 - - [28/Aug/2025 12:33:08] "GET / HTTP/1.1" 200 -
+Transient error StatusCode.UNAVAILABLE encountered while exporting traces to otel-collector:4317, retrying in 1.07s.
+10.0.2.2 - - [28/Aug/2025 12:33:11] "GET / HTTP/1.1" 200 -
+Transient error StatusCode.UNAVAILABLE encountered while exporting traces to otel-collector:4317, retrying in 2.32s.
+Transient error StatusCode.UNAVAILABLE encountered while exporting traces to otel-collector:4317, retrying in 3.40s.
+Failed to export traces to otel-collector:4317, error code: StatusCode.UNAVAILABLE
+127.0.0.1 - - [28/Aug/2025 12:33:17] "[33mGET /metrics HTTP/1.1[0m" 404 -
+Transient error StatusCode.UNAVAILABLE encountered while exporting traces to otel-collector:4317, retrying in 1.10s.
+Transient error StatusCode.UNAVAILABLE encountered while exporting traces to otel-collector:4317, retrying in 2.33s.
+127.0.0.1 - - [28/Aug/2025 12:33:24] "GET / HTTP/1.1" 200 -
+Transient error StatusCode.UNAVAILABLE encountered while exporting traces to otel-collector:4317, retrying in 4.46s.
+Failed to export traces to otel-collector:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting traces to otel-collector:4317, retrying in 0.93s.
+Transient error StatusCode.UNAVAILABLE encountered while exporting traces to otel-collector:4317, retrying in 2.18s.
+10.0.2.2 - - [28/Aug/2025 12:33:36] "GET / HTTP/1.1" 200 -
+10.0.2.2 - - [28/Aug/2025 12:33:36] "GET / HTTP/1.1" 200 -
+Transient error StatusCode.UNAVAILABLE encountered while exporting traces to otel-collector:4317, retrying in 3.93s.
+Failed to export traces to otel-collector:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting traces to otel-collector:4317, retrying in 1.19s.
+Transient error StatusCode.UNAVAILABLE encountered while exporting traces to otel-collector:4317, retrying in 1.84s.
+Transient error StatusCode.UNAVAILABLE encountered while exporting traces to otel-collector:4317, retrying in 3.37s.
+Failed to export traces to otel-collector:4317, error code: StatusCode.UNAVAILABLE
+127.0.0.1 - - [28/Aug/2025 12:36:47] "GET / HTTP/1.1" 200 -
+Transient error StatusCode.UNAVAILABLE encountered while exporting traces to otel-collector:4317, retrying in 1.04s.
+Transient error StatusCode.UNAVAILABLE encountered while exporting traces to otel-collector:4317, retrying in 1.74s.
+Transient error StatusCode.UNAVAILABLE encountered while exporting traces to otel-collector:4317, retrying in 4.47s.
+Failed to export traces to otel-collector:4317, error code: StatusCode.UNAVAILABLE
+10.0.2.2 - - [28/Aug/2025 12:37:23] "GET / HTTP/1.1" 200 -
+10.0.2.2 - - [28/Aug/2025 12:37:24] "GET / HTTP/1.1" 200 -
+Transient error StatusCode.UNAVAILABLE encountered while exporting traces to otel-collector:4317, retrying in 1.00s.
+Transient error StatusCode.UNAVAILABLE encountered while exporting traces to otel-collector:4317, retrying in 2.29s.
+Transient error StatusCode.UNAVAILABLE encountered while exporting traces to otel-collector:4317, retrying in 4.16s.
+Failed to export traces to otel-collector:4317, error code: StatusCode.UNAVAILABLE
+127.0.0.1 - - [28/Aug/2025 12:37:44] "GET / HTTP/1.1" 200 -
+Transient error StatusCode.UNAVAILABLE encountered while exporting traces to otel-collector:4317, retrying in 0.86s.
+Transient error StatusCode.UNAVAILABLE encountered while exporting traces to otel-collector:4317, retrying in 1.68s.
+Transient error StatusCode.UNAVAILABLE encountered while exporting traces to otel-collector:4317, retrying in 4.63s.
+Failed to export traces to otel-collector:4317, error code: StatusCode.UNAVAILABLE
+127.0.0.1 - - [28/Aug/2025 12:45:32] "GET / HTTP/1.1" 200 -
+Transient error StatusCode.UNAVAILABLE encountered while exporting traces to otel-collector:4317, retrying in 1.17s.
+Transient error StatusCode.UNAVAILABLE encountered while exporting traces to otel-collector:4317, retrying in 2.35s.
+Transient error StatusCode.UNAVAILABLE encountered while exporting traces to otel-collector:4317, retrying in 3.21s.
+Failed to export traces to otel-collector:4317, error code: StatusCode.UNAVAILABLE
+127.0.0.1 - - [28/Aug/2025 12:47:31] "GET / HTTP/1.1" 200 -
+Transient error StatusCode.UNAVAILABLE encountered while exporting traces to otel-collector:4317, retrying in 0.89s.
+Transient error StatusCode.UNAVAILABLE encountered while exporting traces to otel-collector:4317, retrying in 2.01s.
+Transient error StatusCode.UNAVAILABLE encountered while exporting traces to otel-collector:4317, retrying in 3.23s.
+Failed to export traces to otel-collector:4317, error code: StatusCode.UNAVAILABLE
+10.0.2.2 - - [28/Aug/2025 12:52:17] "GET / HTTP/1.1" 200 -
+10.0.2.2 - - [28/Aug/2025 12:52:18] "GET / HTTP/1.1" 200 -
+Transient error StatusCode.UNAVAILABLE encountered while exporting traces to otel-collector:4317, retrying in 0.87s.
+Transient error StatusCode.UNAVAILABLE encountered while exporting traces to otel-collector:4317, retrying in 2.26s.
+Transient error StatusCode.UNAVAILABLE encountered while exporting traces to otel-collector:4317, retrying in 4.37s.
+10.0.2.2 - - [28/Aug/2025 12:52:23] "GET / HTTP/1.1" 200 -
+Failed to export traces to otel-collector:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting traces to otel-collector:4317, retrying in 0.82s.
+Transient error StatusCode.UNAVAILABLE encountered while exporting traces to otel-collector:4317, retrying in 1.91s.
+Transient error StatusCode.UNAVAILABLE encountered while exporting traces to otel-collector:4317, retrying in 4.58s.
+Failed to export traces to otel-collector:4317, error code: StatusCode.UNAVAILABLE
+10.0.2.2 - - [28/Aug/2025 12:56:12] "GET / HTTP/1.1" 200 -
+10.0.2.2 - - [28/Aug/2025 12:56:13] "GET / HTTP/1.1" 200 -
+Transient error StatusCode.UNAVAILABLE encountered while exporting traces to otel-collector:4317, retrying in 1.04s.
+10.0.2.2 - - [28/Aug/2025 12:56:14] "GET / HTTP/1.1" 200 -
+Transient error StatusCode.UNAVAILABLE encountered while exporting traces to otel-collector:4317, retrying in 2.28s.
+Transient error StatusCode.UNAVAILABLE encountered while exporting traces to otel-collector:4317, retrying in 4.63s.
+10.0.2.2 - - [28/Aug/2025 12:56:17] "GET / HTTP/1.1" 200 -
+Failed to export traces to otel-collector:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting traces to otel-collector:4317, retrying in 0.98s.
+Transient error StatusCode.UNAVAILABLE encountered while exporting traces to otel-collector:4317, retrying in 2.22s.
+Transient error StatusCode.UNAVAILABLE encountered while exporting traces to otel-collector:4317, retrying in 3.45s.
+Failed to export traces to otel-collector:4317, error code: StatusCode.UNAVAILABLE
+10.0.2.2 - - [28/Aug/2025 13:13:23] "GET / HTTP/1.1" 200 -
+10.0.2.2 - - [28/Aug/2025 13:13:24] "GET / HTTP/1.1" 200 -
+Transient error StatusCode.UNAVAILABLE encountered while exporting traces to otel-collector:4317, retrying in 0.86s.
+Transient error StatusCode.UNAVAILABLE encountered while exporting traces to otel-collector:4317, retrying in 2.35s.
+Transient error StatusCode.UNAVAILABLE encountered while exporting traces to otel-collector:4317, retrying in 3.53s.
+10.0.2.2 - - [28/Aug/2025 13:13:30] "GET / HTTP/1.1" 200 -
+Failed to export traces to otel-collector:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting traces to otel-collector:4317, retrying in 1.10s.
+Transient error StatusCode.UNAVAILABLE encountered while exporting traces to otel-collector:4317, retrying in 2.21s.
+Transient error StatusCode.UNAVAILABLE encountered while exporting traces to otel-collector:4317, retrying in 4.57s.
+Failed to export traces to otel-collector:4317, error code: StatusCode.UNAVAILABLE

@@ -1,0 +1,46 @@
+version: "3.8"
+
+services:
+  app-python:
+    build:
+      context: /vagrant
+      dockerfile: Dockerfile
+    ports:
+      - "5000:5000"
+    environment:
+      - OTEL_EXPORTER_OTLP_ENDPOINT=otel-collector:4317
+    restart: always
+    depends_on:
+      - otel-collector
+    volumes: 
+      - ./app.py:/app/app.py:Z
+
+  otel-collector:
+    image: docker.io/otel/opentelemetry-collector-contrib:latest
+    command: ["--config=/etc/otel-collector-config.yaml"]
+    volumes:
+      - /home/vagrant/otel-lab/config/otel-collector-config.yaml:/etc/otel-collector-config.yaml:Z
+    ports:
+      - "4317:4317"
+      - "4318:4318"
+      - "9464:9464"
+    restart: always
+
+  prometheus:
+    image: docker.io/prom/prometheus:latest
+    command: ["--config.file=/etc/prometheus/prometheus.yml"]
+    volumes:
+      - /home/vagrant/otel-lab/config/prometheus.yml:/etc/prometheus/prometheus.yml:Z
+    ports:
+      - "9090:9090"
+    restart: always
+
+  grafana:
+    image: docker.io/grafana/grafana:latest
+    ports:
+      - "3000:3000"
+    volumes:
+      - /vagrant/grafana-config.yml:/etc/grafana/grafana-config.yml:Z
+    depends_on:
+      - prometheus
+    restart: always

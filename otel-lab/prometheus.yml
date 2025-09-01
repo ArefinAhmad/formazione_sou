@@ -1,0 +1,15 @@
+global:
+  scrape_interval: 5s
+
+scrape_configs:
+  - job_name: "otel-collector"
+    static_configs:
+      - targets: ["otel-collector:9464"]
+  - job_name: 'flask-app'
+    static_configs:
+      - targets: ['vagrant_app-python_1:5000']
+        
+#UI di prometheus: http://localhost:9090
+
+# Per aggiungere altre sorgenti di metriche, aggiungi altre sezioni "scrape_configs"
+# Esempio per un'app Python che espone metriche su /metrics alla porta
