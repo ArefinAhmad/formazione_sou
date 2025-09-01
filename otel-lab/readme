@@ -1,0 +1,111 @@
+# Flask OpenTelemetry Monitoring Stack
+
+Questo progetto implementa un'applicazione Flask monitorata con OpenTelemetry, esportando metriche e tracce verso un sistema di osservabilità completo.
+
+##  Architettura
+
+L'architettura è composta da:
+
+- **Flask App**: Applicazione Python che espone endpoint e metriche
+- **OpenTelemetry Collector**: Raccolta e processamento di metriche e tracce
+- **Prometheus**: Storage e querying delle metriche
+- **Grafana**: Dashboard e visualizzazione dei dati
+
+
+## Struttura dei File
+
+### app.py
+Applicazione Flask principale che:
+- Espone un endpoint principale `/`
+- Espone endpoint metrics `/metrics` per Prometheus
+- Instrumentata con OpenTelemetry per metriche OTLP
+- Utilizza sia counter Prometheus che OpenTelemetry
+
+### otel-collector-config.yaml
+Configurazione dell'OpenTelemetry Collector che:
+- Riceve dati OTLP su gRPC (4317) e HTTP (4318)
+- Processa metriche e tracce con batch e memory limiting
+- Esporta metriche su Prometheus (9464) e debug
+
+### prometheus.yml
+Configurazione di Prometheus che:
+- Scrape ogni 5 secondi
+- Raccoglie metriche dall'OTEL Collector (9464)
+- Raccoglie metriche dall'app Flask (5000)
+
+### podman-compose.yml
+Composizione dei servizi containerizzati:
+- **app-python**: Applicazione Flask sulla porta 5000
+- **otel-collector**: Collector OTLP sulle porte 4317, 4318, 9464
+- **prometheus**: Servizio Prometheus sulla porta 9090
+- **grafana**: Dashboard Grafana sulla porta 3000
+
+### grafana-config.yml
+Configurazione datasource per Grafana:
+- Imposta Prometheus come datasource predefinito
+- Configura l'accesso a Prometheus su `http://prometheus:9090`
+
+##  Deployment
+
+### Prerequisiti
+- Podman o Docker
+- Ambiente Vagrant (come specificato)
+
+### Avvio dei servizi
+```bash
+podman-compose up -d
+```
+
+### Accesso ai servizi
+- **Flask App**: http://localhost:5000
+- **Prometheus UI**: http://localhost:9090
+- **Grafana**: http://localhost:3000
+- **OTEL Collector Metrics**: http://localhost:9464/metrics
+
+##  Metriche Implementate
+
+### Metriche OTLP (OpenTelemetry)
+- `http_requests_total_otlp`: Contatore delle richieste HTTP
+
+### Metriche Prometheus
+- `http_requests_total`: Contatore delle richieste HTTP per endpoint
+
+##  Configurazione OpenTelemetry
+
+L'applicazione è configurata per:
+- Esportare tracce e metriche verso l'OTEL Collector
+- Utilizzare risorse con nome servizio "python-flask-app"
+- Processare span in batch per ottimizzare le performance
+- Esportare metriche ogni secondo (1000ms)
+
+##  Endpoint Disponibili
+
+- `GET /`: Endpoint principale che restituisce "Hello Flask + OT"
+- `GET /metrics`: Endpoint Prometheus per le metriche
+
+##  Monitoring
+
+Il sistema permette di monitorare:
+- Numero di richieste HTTP totali
+- Performance dell'applicazione Flask
+- Tracce distribuite attraverso Tempo
+- Metriche in tempo reale su Grafana
+
+##  Flusso dei Dati
+
+1. Raccolta: L'app Flask genera metriche e tracce
+2. Esportazione: I dati sono inviati all'OTEL Collector
+3. Processamento: Il Collector processa e inoltra i dati
+4. Storage: 
+   - Metriche → Prometheus
+   - Tracce → Tempo
+5. Visualizzazione: Grafana consuma i dati per i dashboard
+
+##  Sviluppo
+
+Per modifiche all'applicazione:
+1. Modificare `app.py`
+2. Riavviare il container dell'app
+3. Le metriche saranno automaticamente disponibili
+
+La configurazione è ottimizzata per ambienti di sviluppo e testing con comunicazioni insecure abilitate per semplicità.
